@@ -8,8 +8,5 @@ build:
   requirementsPath: requirements.txt
 
 run:
-  persistenceMount: /data
   containerPort: 80
   command: uvicorn main:app --host 0.0.0.0 --port 80
-  variables:
-    DATA_DIR: /data
