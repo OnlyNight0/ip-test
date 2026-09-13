@@ -9,7 +9,9 @@ import hashlib
 app = FastAPI()
 
 BASE_DIR = Path(__file__).parent
-DATA_DIR = BASE_DIR / "data"
+import os
+DATA_DIR = Path(os.environ.get("DATA_DIR", BASE_DIR / "data"))
+DATA_DIR.mkdir(parents=True, exist_ok=True)
 DATA_DIR.mkdir(exist_ok=True)
 
 # Отдельные файлы — удобнее потом фильтровать
