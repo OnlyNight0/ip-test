@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Технические работы</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: #0f1115;
+      color: #e8eaf0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+    }
+    .card {
+      max-width: 520px;
+      width: 100%;
+    }
+    .icon {
+      font-size: 64px;
+      line-height: 1;
+      margin-bottom: 20px;
+      animation: pulse 2.5s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%      { opacity: 0.6; transform: scale(0.94); }
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 600;
+      margin: 0 0 12px;
+      letter-spacing: 0.2px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.55;
+      color: #9aa3b2;
+      margin: 0 0 8px;
+    }
+    .hint {
+      margin-top: 28px;
+      font-size: 13px;
+      color: #5b6474;
+    }
+    .dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #f5a623;
+      margin-right: 8px;
+      vertical-align: middle;
+      box-shadow: 0 0 8px #f5a62388;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🛠️</div>
+    <h1>Идут технические работы</h1>
+    <p>Сайт временно недоступен. Мы уже чиним — загляните чуть позже.</p>
+    <p class="hint"><span class="dot"></span>Сервис скоро вернётся в строй</p>
+  </div>
+</body>
+</html>
